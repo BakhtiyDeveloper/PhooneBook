@@ -1,30 +1,31 @@
 ﻿using System;
 using PhooneBook.Models;
+using PhooneBook.Services;
 
-
-internal class Program
+namespace PhooneBook
 {
-    public static void Main(string[] args)
+    internal class Program
     {
-        string yesOrNo = "";
-        do
+        public static void Main(string[] args)
         {
-
-            
-
-
-
+            string yesOrNo = "";
+            do
+            {
 
 
 
 
-            Console.WriteLine("Dasturdan yana foydalanish!!! yes / no");
-            yesOrNo = Console.ReadLine();
-            yesOrNo.ToLower();
-        } while (yesOrNo == "yes" | yesOrNo == "y");
 
-        Console.WriteLine("dastur tugadi");
+                Console.WriteLine("Will you use the program again??? yes / no");
+                yesOrNo = Console.ReadLine();
+                yesOrNo.ToLower();
+            } while (yesOrNo == "yes" | yesOrNo == "y");
 
+            Console.WriteLine("Thank you for using the program!!!");
+
+            Console.ReadKey();
+
+        }
 
 
     }

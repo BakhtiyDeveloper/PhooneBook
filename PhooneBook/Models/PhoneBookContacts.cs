@@ -1,17 +1,12 @@
 ﻿using System;
 
-
-
-
 namespace PhooneBook.Models
 {
-    internal class PhoneBookContacts
+    class PhoneBookModels
     {
-        public string[] phones;
-        public string[] names;
-        public int[] ages;
-
-       
+        string[] names = new string[];
+        string[] phoneNumbers = new string[];
+        int[] ages = new int [];     
 
     }
 }

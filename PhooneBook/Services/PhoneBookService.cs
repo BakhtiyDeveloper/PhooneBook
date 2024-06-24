@@ -3,8 +3,8 @@
 
 namespace PhooneBook.Services
 {
-    internal class PhoneBookService
+    public class PhoneBookService
     {
-       
+        
     }
 }
