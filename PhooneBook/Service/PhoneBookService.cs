@@ -15,6 +15,7 @@ namespace PhooneBook.Service
                 Console.WriteLine("Phonebook list is full!!!");
                 return;
             }
+
             phoneBooks[phoneBookCount] = new PhoneBook
             {
                 Id = phoneBookCount,
