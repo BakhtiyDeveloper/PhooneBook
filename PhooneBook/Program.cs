@@ -20,6 +20,7 @@ namespace PhooneBook
 
                 AddPhoneBook(phoneBookService);
 
+                Console.WriteLine();
                 Console.WriteLine("Do you want to add more information? (yes / no)");
 
                 string answer = Console.ReadLine();
@@ -28,6 +29,7 @@ namespace PhooneBook
                     AddPhoneBook(phoneBookService);
                 }
 
+                Console.WriteLine();
                 Console.WriteLine("Do you want to show all contacts? (yes / no)");
                 answer = Console.ReadLine();
                 if (answer.ToLower() == "yes" || answer.ToLower() == "y")
@@ -35,6 +37,7 @@ namespace PhooneBook
                     ShowAllPhoneBooks(phoneBookService);
                 }
 
+                Console.WriteLine();
                 Console.WriteLine("Do you want to remove a contact? (yes / no)");
                 answer = Console.ReadLine();
                 if (answer.ToLower() == "yes" || answer.ToLower() == "y")
@@ -42,10 +45,12 @@ namespace PhooneBook
                     RemoveContactAtPhonebook(phoneBookService);
                 }
 
+                Console.WriteLine();
                 Console.WriteLine("Do you want to continue? (yes / no)");
                 yesOrNo = Console.ReadLine();
             } while (yesOrNo.ToLower() == "yes" || yesOrNo.ToLower() == "y");
 
+            cw
             Console.WriteLine("Thank you for using our program");
         }
 

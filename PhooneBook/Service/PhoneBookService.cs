@@ -10,7 +10,7 @@ namespace PhooneBook.Service
 
         public void AddPhoneBook(string firstName, string lastName, string phoneNumber)
         {
-            if (phoneBookCount > phoneBooks.Length)
+            if (phoneBookCount < phoneBooks.Length)
             {
                 phoneBooks[phoneBookCount] = new PhoneBook
                 {
